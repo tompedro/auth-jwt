@@ -1,0 +1,18 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVG9tIiwiaWF0IjoxNTg0MjY5Mzc5LCJleHAiOjE1ODQyNjkzOTR9.TslTWomssdpthCV8PG3p4X0esu80WHcIoivwnC_xFvs
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVG9tIiwiaWF0IjoxNTg0MjY5MzMwfQ.thCNo-Yet2n-UhVc5R53YjAkHAgYTMDzWMauYlmnnVc"
+}
+
+###
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username" : "Light"
+}
